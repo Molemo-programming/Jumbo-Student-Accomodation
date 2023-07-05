@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pnAbout" prefHeight="600.0" prefWidth="800.0" styleClass="@Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.hotelbooking.Controller">
+    <children>
+    <AnchorPane prefHeight="50.0" prefWidth="900.0" style="-fx-background-color: #65756e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Label fx:id="lblExit" alignment="CENTER" layoutX="859.0" prefHeight="52.0" prefWidth="42.0" styleClass="topItems" stylesheets="@Style.css" AnchorPane.rightAnchor="0.0">
+                <graphic>
+                    <ImageView fx:id="exit" fitHeight="38.0" fitWidth="38.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                        <image>
+                            <Image url="@Images/exit.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Label>
+            <Label fx:id="lblFull" alignment="CENTER" layoutX="586.0" prefHeight="52.0" prefWidth="42.0" styleClass="topItems" stylesheets="@Style.css" AnchorPane.rightAnchor="43.0">
+                <graphic>
+                    <ImageView fitHeight="37.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                        <image>
+                            <Image url="@Images/fit-to-width-48.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Label>
+            <Label fx:id="lblBrand" layoutX="7.0" layoutY="-5.0" prefHeight="60.0" prefWidth="301.0" text="Babylonstoren" textFill="#a6a6a6">
+                <font>
+                    <Font name="Baskerville Old Face" size="48.0" />
+                </font></Label>
+        </children>
+    </AnchorPane>
+    <AnchorPane fx:id="pnB" layoutY="50.0" prefHeight="550.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="91.0">
+        <children>
+            <VBox prefHeight="550.0" prefWidth="175.0" spacing="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Button fx:id="btnHome" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#btnHome" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="Home">
+                        <font>
+                            <Font name="MT Extra" size="20.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets />
+                        </VBox.margin>
+                        <graphic>
+                            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@Images/Home.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#btnGallery" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="Gallery">
+                        <font>
+                            <Font name="MT Extra" size="20.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@Images/Gallery.jpg" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="About">
+                        <font>
+                            <Font name="MT Extra" size="20.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@Images/Info.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                </children>
+                <opaqueInsets>
+                    <Insets top="1.0" />
+                </opaqueInsets>
+            </VBox>
+        </children>
+    </AnchorPane>
+    <Label fx:id="Mc" alignment="BASELINE_LEFT" layoutY="50.0" prefHeight="41.0" prefWidth="175.0" styleClass="menuItems" stylesheets="@Style.css" text="Menu" AnchorPane.leftAnchor="0.0">
+        <font>
+            <Font name="MT Extra" size="20.0" />
+        </font>
+        <padding>
+            <Insets left="12.0" />
+        </padding>
+        <graphic>
+            <ImageView fx:id="imgMen" fitHeight="33.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                <image>
+                    <Image url="@Images/hamburger-menu-icon-transparent-7.jpg" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Label>
+    <Label fx:id="Menu" alignment="BASELINE_LEFT" layoutY="50.0" prefHeight="41.0" prefWidth="175.0" styleClass="menuItems" stylesheets="@Style.css" text="Menu">
+        <font>
+            <Font name="MT Extra" size="20.0" />
+        </font>
+        <padding>
+            <Insets left="12.0" />
+        </padding>
+        <graphic>
+            <ImageView fx:id="imgMen1" fitHeight="33.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                <image>
+                    <Image url="@Images/hamburger-menu-icon-transparent-7.jpg" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Label>
+
+</children>
+</AnchorPane>

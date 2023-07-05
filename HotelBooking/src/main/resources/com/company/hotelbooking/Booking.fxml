@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pnBooking" prefHeight="600.0" prefWidth="800.0" styleClass="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.hotelbooking.Controller">
+    <children>
+        <AnchorPane prefHeight="50.0" prefWidth="900.0" style="-fx-background-color: #65756e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label fx:id="lblExit" alignment="CENTER" layoutX="859.0" prefHeight="52.0" prefWidth="42.0" styleClass="topItems" AnchorPane.rightAnchor="0.0">
+                    <graphic>
+                        <ImageView fx:id="exit" fitHeight="38.0" fitWidth="38.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false">
+                            <image>
+                                <Image url="@Images/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="lblFull" alignment="CENTER" layoutX="586.0" prefHeight="52.0" prefWidth="42.0" styleClass="topItems" AnchorPane.rightAnchor="43.0">
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                            <image>
+                                <Image url="@Images/fit-to-width-48.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="lblBrand" layoutX="7.0" layoutY="-5.0" prefHeight="60.0" prefWidth="301.0" text="Babylonstoren" textFill="#a6a6a6">
+                    <font>
+                        <Font name="Baskerville Old Face" size="48.0" />
+                    </font></Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="pnB" layoutY="50.0" prefHeight="550.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="91.0">
+            <children>
+                <VBox prefHeight="550.0" prefWidth="175.0" spacing="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="btnHome" alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#btnHome" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="Home">
+                            <font>
+                                <Font name="MT Extra" size="20.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/Home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#btnGallery" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="Gallery">
+                            <font>
+                                <Font name="MT Extra" size="20.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/Gallery.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" cache="true" mnemonicParsing="false" onAction="#btnAbout" prefHeight="41.0" prefWidth="175.0" styleClass="sidebarItems" text="About">
+                            <font>
+                                <Font name="MT Extra" size="20.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/Info.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets top="1.0" />
+                    </opaqueInsets>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <Label fx:id="Mc" alignment="BASELINE_LEFT" layoutY="50.0" prefHeight="41.0" prefWidth="175.0" styleClass="menuItems" text="Menu" AnchorPane.leftAnchor="0.0">
+            <font>
+                <Font name="MT Extra" size="20.0" />
+            </font>
+            <padding>
+                <Insets left="12.0" />
+            </padding>
+            <graphic>
+                <ImageView fx:id="imgMen" fitHeight="33.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                    <image>
+                        <Image url="@Images/hamburger-menu-icon-transparent-7.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label fx:id="Menu" alignment="BASELINE_LEFT" layoutY="50.0" prefHeight="41.0" prefWidth="175.0" styleClass="menuItems" text="Menu">
+            <font>
+                <Font name="MT Extra" size="20.0" />
+            </font>
+            <padding>
+                <Insets left="12.0" />
+            </padding>
+            <graphic>
+                <ImageView fx:id="imgMen1" fitHeight="33.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                    <image>
+                        <Image url="@Images/hamburger-menu-icon-transparent-7.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+      <TextField fx:id="name" layoutX="194.0" layoutY="124.0" prefHeight="41.0" prefWidth="230.0" promptText="First name" />
+      <TextField fx:id="surname" layoutX="484.0" layoutY="124.0" prefHeight="41.0" prefWidth="230.0" promptText="Last name" />
+      <DatePicker fx:id="cin" layoutX="194.0" layoutY="178.0" prefHeight="41.0" prefWidth="230.0" promptText="Check-in" />
+      <DatePicker fx:id="cout" layoutX="484.0" layoutY="178.0" prefHeight="41.0" prefWidth="230.0" promptText="Check-out" />
+      <TextField fx:id="guest" layoutX="194.0" layoutY="230.0" prefHeight="41.0" prefWidth="230.0" promptText="Guest no" />
+      <TextField fx:id="card" layoutX="484.0" layoutY="230.0" prefHeight="41.0" prefWidth="230.0" promptText="Card no" />
+      <TextField fx:id="email" layoutX="194.0" layoutY="336.0" prefHeight="41.0" prefWidth="230.0" promptText="Email address" />
+      <TextField fx:id="contact" layoutX="484.0" layoutY="336.0" prefHeight="41.0" prefWidth="230.0" promptText="Contacts" />
+      <TextField fx:id="adrs" layoutX="191.0" layoutY="397.0" prefHeight="100.0" prefWidth="522.0" promptText="Street address" />
+      <Text layoutX="306.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information" textAlignment="CENTER" wrappingWidth="290.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Information" textAlignment="CENTER" wrappingWidth="264.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button alignment="BASELINE_LEFT" cache="true" layoutX="364.0" layoutY="524.0" mnemonicParsing="false" onAction="#btnSubmit" prefHeight="41.0" prefWidth="175.0" styleClass="Buttons" text="        Book" textAlignment="CENTER">
+         <font>
+            <Font name="MT Extra" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

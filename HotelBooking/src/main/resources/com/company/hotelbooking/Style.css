@@ -1,0 +1,46 @@
+.clo{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-padding: 5;
+    -fx-background-radius:25;
+
+
+}
+
+.sidebarItems:hover{
+
+    -fx-background-color:#e6e6e6;
+    -fx-border-color: #65756e;
+    -fx-border-width: 0px 0px 0px 4px;
+
+}
+
+.sidebarItems{
+
+    -fx-background-color:transparent;
+
+}
+
+
+.menuItems:hover{
+
+    -fx-background-color:#e6e6e6;
+    -fx-border-color: #65756e;
+    -fx-border-width: 0px 0px 0px 4px;
+
+
+}
+.topItems:hover{
+
+    -fx-background-color: #5f6d67;
+
+}
+
+.Buttons{
+
+    -fx-background-color: #65756e;
+
+}
+
+
+
+
